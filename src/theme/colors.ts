@@ -1,0 +1,17 @@
+export const colors = {
+  primary: '#009970',
+  primaryDark: '#007A59',
+  accentGreen: '#38C98F',
+  darkBg: '#1A262B',
+  white: '#FFFFFF',
+  background: '#F7F9F8',
+  inputBg: '#EAEAEA',
+  textDark: '#1E1E1E',
+  textMuted: '#6E7A76',
+  border: '#DCE3E0',
+  badgeOleo: '#E59819',
+  badgePapel: '#4E9AA8',
+  badgeNaoReciclado: '#D97A7A',
+  badgeVidro: '#74B583',
+  verifiedBlue: '#2B87D3',
+};
