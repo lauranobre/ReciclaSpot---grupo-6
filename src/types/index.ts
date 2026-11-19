@@ -1,3 +1,5 @@
+import { ImageSourcePropType } from 'react-native';
+
 export type CategoriaResiduo =
   | 'Eletrônicos'
   | 'Óleo Usado'
@@ -14,10 +16,10 @@ export interface PontoColeta {
   horarioFuncionamento: string;
   latitude: number;
   longitude: number;
-  imagemUri: any;
+  imagemUri: ImageSourcePropType | string;
   telefoneContato: string;
   aceitaEntulho: boolean;
-  // Campos visuais do protótipo Figma
+  // Campos visuais do Figma
   distanciaKm?: string;
   verificado?: boolean;
   materiaisAceitos?: string[];
@@ -33,7 +35,7 @@ export interface Usuario {
   pontosReciclagem: number;
   descartesRealizados?: number;
   kgsReciclados?: number;
-  fotoPerfilUri: string;
+  fotoPerfilUri: ImageSourcePropType | string;
 }
 
 export type RootStackParamList = {
