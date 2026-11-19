@@ -12,7 +12,14 @@ interface Props {
 export function EcopontoCard({ ponto, onPress, showStatusBadge }: Props) {
   return (
     <TouchableOpacity style={styles.card} activeOpacity={0.85} onPress={onPress}>
-      <Image source={{ uri: ponto.imagemUri }} style={styles.image} />
+      <Image
+        source={
+          typeof ponto.imagemUri === 'string'
+            ? { uri: ponto.imagemUri }
+            : ponto.imagemUri
+        }
+        style={styles.image}
+      />
 
       <View style={styles.infoContainer}>
         <View style={styles.headerRow}>
